@@ -20,7 +20,7 @@ const FilmCard = ({ id, title, overview, poster_path, vote_average, release_date
     return <>
         <Card isPressable className='bg-gray-200 dark:bg-[#181818]' shadow='none' onClick={() => router.push(`/films/${id}`)}>
             <CardHeader className='p-0 z-20'>
-                <Image  isZoomed src={`${IMAGE_BASE_URL}${poster_path}`} className='object-cover object-center' alt={title} draggable={"false"} />
+                <Image  isZoomed src={`${IMAGE_BASE_URL}${poster_path}`} className='object-cover object-center w-full h-full' alt={title} draggable={"false"} />
             </CardHeader>
             <CardBody className='flex-col'>
                 <div>
