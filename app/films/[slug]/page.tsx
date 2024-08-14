@@ -65,7 +65,7 @@ const FilmPage = async ({ params }: PageProps) => {
         <main className="min-h-screen py-4">
             <div className="container mx-auto">
                 <MainInfo film={film} />
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-5">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-5 px-4">
                     {actors.cast.map((actor: any, index: number) =>
                         <ActorsCard key={index} image={actor.profile_path} name={actor.name} character={actor.character} />
                     )}
