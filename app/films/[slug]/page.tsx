@@ -62,7 +62,7 @@ const FilmPage = async ({ params }: PageProps) => {
     if (!film) return notFound();
     const actors = await getMovieCasts(slug)
     return (
-        <main className="min-h-screen px-4">
+        <main className="min-h-screen py-4">
             <div className="container mx-auto">
                 <MainInfo film={film} />
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-5">
